@@ -35,9 +35,9 @@ public class MetaModelExample {
         DataContextFactory.createCsvDataContext(new File(filename));
     List<String> tableNames = dataContext.getDefaultSchema().getTableNames();
 
-    System.out.println(Arrays.toString(tableNames.toArray()));
+    System.out.println(Arrays.toString(tableNames.toArray())); // []
 
-    // [1] is "default_table" alias for single-table data stores
+    // "default_table" alias for single-table data stores
     final String table = tableNames.get(0);
 
     DataSet dataSet = dataContext.query()

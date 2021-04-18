@@ -6,7 +6,7 @@ go: compile package install run
 compile:
     mvn compile
 
-build:
+package:
     mvn package
 
 install:
